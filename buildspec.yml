@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - curl -O https://bootstrap.pypa.io/pip/get-pip.py
+        - curl -O https://bootstrap.pypa.io/pip/3.4/get-pip.py
         - python3 get-pip.py
         - python3 -m pip install -r requirements.txt
   build:
