@@ -4,13 +4,13 @@ phases:
   install:
     commands:
         - curl -O https://bootstrap.pypa.io/pip/get-pip.py
-        - python get-pip.py
-        - python -m pip install -r requirements.txt
+        - python3 get-pip.py
+        - python3 -m pip install -r requirements.txt
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python tests.py
+      - python3 tests.py
   post_build:
     commands:
       - echo Build completed on `date`
